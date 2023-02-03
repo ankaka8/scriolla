@@ -1,0 +1,95 @@
+@charset "UTF-8";
+@import url(reset.css);
+
+
+body {
+    background-color: #eee;
+}
+
+.wrap {}
+
+.header {
+    width: 100%;
+    height: 80px;
+    background-color: rgb(227, 255, 174);
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+.header .website_title {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+
+.header .search-form {
+    width: 250px;
+    margin-left: auto;
+}
+
+.header .search-form input.search {
+    border-radius: 5px;
+    border: none;
+}
+
+.header .search-form input[type="submit"] {
+
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    width: 60px;
+    background-color: rgb(119, 243, 206);
+}
+
+
+/* menu  */
+
+.menu {
+    display: flex;
+    width: 100%;
+}
+
+.menu .menu-item {
+    width: 25%;
+    background-color: rgb(119, 243, 206);
+    transition: 0.3s;
+    text-align: center;
+}
+
+
+.menu .menu-item:hover {
+    width: 35%;
+    background-color: skyblue;
+}
+
+.menu .menu-item .menu-link {
+    display: block;
+    font-size: 20px;
+    padding: 15px;
+    font-weight: bold;
+}
+
+.primary {}
+
+.primary .card-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.primary .card-list .card-item {
+    width: 33.3333%;
+    padding: 0 15px;
+}
+
+
+.primary .card-list .card-item .card-image {
+    background: url(../image/123.png) no-repeat center center;
+    height: 0;
+    padding-bottom: 350px;
+}
+
+/* 패딩과 마진의 상하좌우 공간을 백분율로 줄떄 기준=부모의 넓이값 */
+.primary .card-list .card-item .card-desc {
+    text-align: center;
+}
